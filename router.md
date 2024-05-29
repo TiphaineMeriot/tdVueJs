@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'categories',
       component: CategorieView
     },
+      {
+          path: '/produits',
+          name: 'produits',
+          component: ProductView
+      },
     // Autres routes...
   ]
 })
@@ -45,6 +50,7 @@ Dans les composants Vue, la navigation entre les composants s'effectue à l'aide
 <div>
 <router-link to="/">Accueil</router-link>
 <router-link to="/categories">Afficher les catégories</router-link>
+    <router-link to="/produits">Afficher les produits</router-link>
 </div>
 </template>
 ```
