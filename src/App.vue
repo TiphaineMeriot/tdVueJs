@@ -1,25 +1,28 @@
 <script setup>
 import {RouterLink, RouterView} from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import CategorieView from "@/views/CategorieView.vue";
+import ProduitView from "@/views/ProduitView.vue";
 </script>
 
 <template>
-    <header>
+<!--    <header>
         <img alt="Vue logo" class="logo" height="125" src="@/assets/logo.svg" width="125"/>
 
         <div class="wrapper">
             <HelloWorld msg="You did it!"/>
             <nav>
-                <!-- RouterLink : des liens qui pointent vers le composant à afficher -->
-                <!-- Voir la configuration des liens dans router/index.js -->
+                &lt;!&ndash; RouterLink : des liens qui pointent vers le composant à afficher &ndash;&gt;
+                &lt;!&ndash; Voir la configuration des liens dans router/index.js &ndash;&gt;
                 <RouterLink to="/">Home</RouterLink>
                 <RouterLink to="/about">About</RouterLink>
                 <RouterLink to="/categories">Catégories</RouterLink>
             </nav>
         </div>
-    </header>
+    </header>-->
+  <ProduitView/>
     <!-- RouterView : Le composant sélectionné s'affiche ici -->
-    <RouterView/>
+<!--    <RouterView/>-->
 </template>
 
 <style scoped>
